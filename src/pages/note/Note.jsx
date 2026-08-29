@@ -1,6 +1,6 @@
 const Note = () => {
     return (
-        <div>
+        <div className="min-h-screen bg-blue-100 pt-20">
             <h1>Notes</h1>
         </div>
     )

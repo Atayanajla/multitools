@@ -15,7 +15,7 @@ const Home = () => {
     {
       image: "../public/bg/suhu.jpg",
       label: "Kalkulator Suhu",
-      link: "/tools/usia",
+      link: "/tools/suhu",
     },
     {
       image: "../public/bg/tanggal.jpg",
@@ -29,7 +29,7 @@ const Home = () => {
     },
     {
       image: "../public/bg/timer.jpg",
-      label: "Kalkulator Timer",
+      label: "Timer",
       link: "/tools/timer",
     },
     {
