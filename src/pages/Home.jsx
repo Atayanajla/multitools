@@ -3,29 +3,9 @@ import AccordionGallery from "../components/AccordionGallery";
 const Home = () => {
   const items = [
     {
-      image: "../public/bg/basic.jpg",
-      label: "Kalkulator Basic",
-      link: "/tools/basic",
-    },
-    {
-      image: "../public/bg/bmi.jpg",
-      label: "Kalkulator BMI",
-      link: "/tools/bmi",
-    },
-    {
-      image: "../public/bg/suhu.jpg",
-      label: "Kalkulator Suhu",
-      link: "/tools/suhu",
-    },
-    {
-      image: "../public/bg/tanggal.jpg",
-      label: "Kalkulator Day/Month/Years - Hour/Min/Sec",
-      link: "/tools/tanggal",
-    },
-    {
-      image: "../public/bg/usia.jpg",
-      label: "Kalkulator Usia",
-      link: "/tools/usia",
+      image: "../public/bg/mathfis.jpg",
+      label: "Matematika/Fisika",
+      link: "/tools/mathfis",
     },
     {
       image: "../public/bg/timer.jpg",

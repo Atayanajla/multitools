@@ -49,61 +49,15 @@ const Header = () => {
       <div className="flex items-center gap-4 md:gap-8">
         <ul className="hidden md:flex items-center gap-5">
           <li className="relative">
-            <button onClick={() => toggleDropdown("kalkulator")} className="hover:font-bold">
-              Kalkulator ▾
-            </button>
-            {openDropdown === "kalkulator" && (
-              <ul className="absolute top-full left-0 mt-2 min-w-[90px] backdrop-blur-md bg-white/60 shadow-md rounded-md py-2 list-none text-center ">
-                <li>
-                  <RouterLink
-                    to="/tools/basic"
-                    onClick={() => setOpenDropdown(null)}
-                    className="hover:font-bold hover:border-b hover:border-gray-400"
-                  >
-                    Basic
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink
-                    to="/tools/bmi"
-                    onClick={() => setOpenDropdown(null)}
-                    className="hover:font-bold hover:border-b hover:border-gray-400"
-                  >
-                    BMI
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink
-                    to="/tools/suhu"
-                    onClick={() => setOpenDropdown(null)}
-                    className="hover:font-bold hover:border-b hover:border-gray-400"
-                  >
-                    Suhu
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink
-                    to="/tools/tanggal"
-                    onClick={() => setOpenDropdown(null)}
-                    className="hover:font-bold hover:border-b hover:border-gray-400"
-                  >
-                    Tanggal
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink
-                    to="/tools/usia"
-                    onClick={() => setOpenDropdown(null)}
-                    className="hover:font-bold hover:border-b hover:border-gray-400"
-                  >
-                    Usia
-                  </RouterLink>
-                </li>
-              </ul>
-            )}
+            <RouterLink to="/tools/mathfis" className="hover:font-bold">
+              Matematika/Fisika
+            </RouterLink>
           </li>
           <li className="relative">
-            <button onClick={() => toggleDropdown("stopwatch")} className="hover:font-bold">
+            <button
+              onClick={() => toggleDropdown("stopwatch")}
+              className="hover:font-bold"
+            >
               Stopwatch/Timer ▾
             </button>
             {openDropdown === "stopwatch" && (
@@ -130,10 +84,14 @@ const Header = () => {
             )}
           </li>
           <li className="relative">
-            <RouterLink to="/tools/todolist" className="hover:font-bold">Todo List</RouterLink>
+            <RouterLink to="/tools/todolist" className="hover:font-bold">
+              Todo List
+            </RouterLink>
           </li>
           <li className="relative">
-            <RouterLink to="/tools/note" className="hover:font-bold">Notes</RouterLink>
+            <RouterLink to="/tools/note" className="hover:font-bold">
+              Notes
+            </RouterLink>
           </li>
         </ul>
       </div>
